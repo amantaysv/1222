@@ -1,0 +1,50 @@
+.header {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+
+    .navbar {
+        text-transform: uppercase;
+        color: #fff;
+
+        &-brand {
+            position: relative;
+            font-size: 45px;
+            color: #fff;
+            margin-right: 15rem;
+
+            &:hover {
+                color: #fff;
+            }
+
+            &:focus {
+                color: #fff;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                border: 1px solid white;
+                width: 151px;
+                height: 151px;
+                border-radius: 100%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        &-nav {
+            span {
+                font-size: 14px;
+                padding: .5rem 2rem;
+            }
+
+            .nav-link {
+                color: #fff;
+            }
+        }
+    }
+}
